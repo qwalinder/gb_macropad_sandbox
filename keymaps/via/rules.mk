@@ -1,0 +1,3 @@
+VIA_ENABLE = yes
+BOOTLOADER = atmel-dfu
+ENCODER_ENABLE = yes
