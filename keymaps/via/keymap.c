@@ -37,44 +37,35 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
      *        CCW: left arrow
      */
     if (index == 0) {
-        switch (get_highest_layer(layer_state)) {
-            case 0:
-                // main layer - move mouse right (CW) and left (CCW)
-                if (clockwise) {
-                    tap_code(KC_MS_WH_RIGHT);
-                } else {
-                    tap_code(KC_MS_WH_LEFT);
-                }
-
-            // default:
-            //     // other layers - =/+ (quals/plus) (CW) and -/_ (minus/underscore) (CCW)
-            //     if (clockwise) {
-            //         tap_code(KC_EQL);
-            //     } else {
-            //         tap_code(KC_MINS);
-            //     }
-                break;
+        // main layer - move mouse right (CW) and left (CCW)
+        if (clockwise) {
+            tap_code(KC_MS_WH_RIGHT);
+        } else {
+            tap_code(KC_MS_WH_LEFT);
         }
+
+        // default:
+        //     // other layers - =/+ (quals/plus) (CW) and -/_ (minus/underscore) (CCW)
+        //     if (clockwise) {
+        //         tap_code(KC_EQL);
+        //     } else {
+        //         tap_code(KC_MINS);
+        //     }
     } else if (index == 1) {
-        switch (get_highest_layer(layer_state)) {
-            case 0:
-                // main layer - volume up (CW) and down (CCW)
-                if (clockwise) {
-                    tap_code(KC_VOLU);
-                } else {
-                    tap_code(KC_VOLD);
-                }
-                break;
-
-            // default:
-            //     // other layers - right (CW) and left (CCW)
-            //     if (clockwise) {
-            //         tap_code(KC_RIGHT);
-            //     } else {
-            //         tap_code(KC_LEFT);
-            //     }
-                break;
+        // main layer - volume up (CW) and down (CCW)
+        if (clockwise) {
+            tap_code(KC_VOLU);
+        } else {
+            tap_code(KC_VOLD);
         }
+
+        // default:
+        //     // other layers - right (CW) and left (CCW)
+        //     if (clockwise) {
+        //         tap_code(KC_RIGHT);
+        //     } else {
+        //         tap_code(KC_LEFT);
+        //     }
     }
-    return true;
+    return false;
 }

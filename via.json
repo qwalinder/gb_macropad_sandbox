@@ -1,6 +1,6 @@
 {
   "name": "gb_macropad",
-  "vendorId": "0x1209",
+  "vendorId": "0x3434",
   "productId": "0x0100",
   "matrix": {
     "rows": 3,

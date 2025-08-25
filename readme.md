@@ -3,10 +3,10 @@
 A 3x4 macropad with 2 rotary encoders, built by Glassboard Product Development.
 
 Contributors:
-Quinlan Walinder - PCB Design and Firmware
-Colin Ternus - PCB Schematic and Mechanical Design
-Sean Kleinschmidt - Wallet
 
+Quinlan Walinder - PCB Design and Firmware
+
+Colin Ternus - PCB Schematic and Mechanical Design
 
 * Keyboard Maintainer: [quinlanwalinder-gb](https://github.com/quinlanwalinder-gb)
 * Hardware Supported: ATmega32u4
